@@ -1,7 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "Application.h"
-#include "server.h"
+#include "Application/Application.h"
+#include "Server/server.h"
 
 #include "std_types.c"
 
@@ -10,7 +8,7 @@ int main(void){
 
 
 #if (TESTING_MODE ==0)
-	uint8_t choice;
+	 uint8_t choice;
 	while(1){
 		printf("What do you want to do?\n");
 		printf("\n");
@@ -52,7 +50,7 @@ int main(void){
 	isValidCardPANTest();
 
 	//-------------------------------server test--------------------------------------------//
-	recieveTransactionDataTest();
+recieveTransactionDataTest();
 	isValidAccountTest();
 	isBlockedAccountTest();
 	isAmountAvailableTest();
